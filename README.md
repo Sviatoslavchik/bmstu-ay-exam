@@ -252,3 +252,13 @@ st.upper_bound(4); // 10
   Добавление: O(1), 
   Сортировка: по определению несортируемый.
   Для сортировки сначала придётся куда-то переложить всё содержимое - например, в vector.
+* Пример работы с std::unordered_map
+```bash
+std::unordered_map<int,std::string> dict={{1,"one"},{2,"two"}};
+
+dict.insert({3,"three"}); // ok
+dict.insert(std::make_pair{4,"four"}); // ok
+dict.insert({4,"another four"}, {5,"five"}); // Вставиться только five
+```
+### Вопрос №5 (Класс std::vector.Внутренняя реализация vector,его основные методы. Сложность поиска, сортировки,удаления элемента, добавления элемента. Пример работы с std::vector.Особенности std::vector<bool>)
+
