@@ -63,7 +63,15 @@ list delElem(list *lst){
 }
 ```
 * Основные методы std::list
-> clear, insert, erase, push_back, pop_back, push_front, pop_front, swap, size(размер контейнера, работает за О(N)).
+> clear(полное очищение)
+insert(вставка по итератору)
+erase(Принимает один или два итератора и удаляет элемент или элементы в диапазоне
+push_back(засунуть элемент в конец)
+pop_back(вытащить элемент из конца)
+push_front(засунуть элемент в начало)
+pop_front(вытащить элемент из начала)
+swap()
+size(размер контейнера, работает за О(N)).
 * Пример работы с std::list
 ```bash
 list<int> a;
