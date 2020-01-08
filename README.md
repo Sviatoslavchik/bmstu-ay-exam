@@ -16,6 +16,7 @@ Struct list{
 std::find(list.begin(),list.end(),value);
 ```
 * Вставка элемента в список.
+
 1 способ.
 ```bash
 list * addElem(list *lst, int num){
